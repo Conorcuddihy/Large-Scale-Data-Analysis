@@ -24,10 +24,10 @@ public class TwitterStreaming {
         SparkConf config = new SparkConf().setMaster("local[2]").setAppName("Assignment5");
 
 //  put all the credentials
-        System.setProperty("twitter4j.oauth.consumerKey", "mkSgTwg8VXc98WAGdWzG6j5aF");
-        System.setProperty("twitter4j.oauth.consumerSecret", "5vli3cdyzIlL2coTItcFTgDvTXxcDOUuxQvJydn1W6lEaZtiV0");
-        System.setProperty("twitter4j.oauth.accessToken", "753096475677196288-1LROQMaOWsxcUvENwKpzC7lYQuc05IT");
-        System.setProperty("twitter4j.oauth.accessTokenSecret", "6w2IflFTvcxoQvsQqqnOH4TO9c6Gw1BlWairQxem0fNlu");
+        System.setProperty("twitter4j.oauth.consumerKey", "");
+        System.setProperty("twitter4j.oauth.consumerSecret", "");
+        System.setProperty("twitter4j.oauth.accessToken", "");
+        System.setProperty("twitter4j.oauth.accessTokenSecret", "");
 
 //  create JavaStreamingContext
         JavaStreamingContext jsscs = new JavaStreamingContext(config, new Duration(5000));

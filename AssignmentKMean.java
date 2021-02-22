@@ -20,7 +20,7 @@ public class AssignmentKMean {
 //		set the sparks context
 		JavaSparkContext ctx = new JavaSparkContext(sparkConf);
 //		read the text file given; which contains data
-		JavaRDD<String> rawData = ctx.textFile("..\\Twitter\\twitter2D.txt", 1);
+		JavaRDD<String> rawData = ctx.textFile("..\\Twitter\\twit.txt", 1);
 
 //		here we are making JavaRDD of string and vector. The string is the Tweet and the vector is the coordinate's
 		JavaRDD<Tuple2<String, Vector>> featuredDataOne = rawData.map((String s) -> {
